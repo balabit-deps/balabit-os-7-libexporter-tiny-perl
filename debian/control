@@ -1,0 +1,26 @@
+Source: libexporter-tiny-perl
+Section: perl
+Priority: optional
+Build-Depends: cdbs,
+ devscripts,
+ perl,
+ debhelper (>= 9),
+ dh-buildinfo,
+ libtest-fatal-perl,
+ libtest-warnings-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Standards-Version: 4.1.1
+Testsuite: autopkgtest-pkg-perl
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libexporter-tiny-perl
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libexporter-tiny-perl.git
+Homepage: https://metacpan.org/release/Exporter-Tiny
+
+Package: libexporter-tiny-perl
+Architecture: all
+Depends: ${cdbs:Depends},
+ ${misc:Depends},
+ ${perl:Depends}
+Description: tiny exporter similar to Sub::Exporter
+ Exporter::Tiny is an exporter for Perl with the features of
+ Sub::Exporter but only core dependencies.
